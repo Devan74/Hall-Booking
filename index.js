@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require ("express");
 const app = express();
 
 app.use(express.json());
@@ -13,8 +13,8 @@ const rooms = [
     room_id: "10050001",
     bookingDetails: [
       {
-        customer_name: "S Devan",
-        date: "11/11/2022",
+        customer_name: "Sai Chakri",
+        date: "11/08/2022",
         start: "10:00",
         end: "14:00",
         status: "Confirmed",
@@ -29,8 +29,8 @@ const rooms = [
     room_id: "15075002",
     bookingDetails: [
       {
-        customer_name: "R Mohan",
-        date: "10/11/2022",
+        customer_name: "Dhaathri S",
+        date: "10/08/2022",
         start: "11:00",
         end: "15:00",
         status: "Payment Pending",
@@ -129,7 +129,7 @@ app.get("/", (req, res) => {
   console.log("server is running successfully");
 });
 
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
   console.log(`server started at ${port}`);
